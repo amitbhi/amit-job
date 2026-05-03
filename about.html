@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Amit Vishnu Bhise | Full Profile</title>
+    <meta name="description"
+        content="Profile of Amit Bhise, AI Research Scientist and Leader specializing in Human-Centered AI, Knowledge Graphs, and Agentic AI at Scale. Published researcher in leading AI journals.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2">
+    <script src="analytics.js"></script>
+    <style>
+        /* Additional specific styles for about page */
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            border-bottom: 2px solid rgba(45, 212, 191, 0.3);
+            padding-bottom: 0.5rem;
+        }
+
+        .experience-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .experience-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            transform: translateY(-2px);
+            border-color: rgba(45, 212, 191, 0.3);
+        }
+
+        .job-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .job-company {
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .job-details {
+            color: var(--text-secondary);
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .job-details li {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .job-details li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .highlight-text {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .info-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 2rem;
+        }
+
+        .info-card h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .info-card p,
+        .info-card ul {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .info-card ul {
+            padding-left: 1.2rem;
+            margin-top: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--accent);
+        }
+
+        /* Chatbot floating button */
+        .chat-widget-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 10px 25px rgba(45, 212, 191, 0.5);
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-decoration: none;
+            color: var(--bg-darker);
+        }
+
+        .chat-widget-btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="icon" href="profile.jpg" type="image/jpeg">
+</head>
+
+<body>
+    <div class="blob-cont">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="profile.jpg" alt="Amit Bhise">
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link active">About</a>
+            <a href="chat.html" class="nav-link">Ask Amit AI</a>
+        </div>
+    </nav>
+
+    <main class="container" style="align-items: flex-start; max-width: 1200px; margin: 0 auto;">
+        <div class="glass-card" style="padding: 3rem; transform: none; max-width: 100%;">
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Home
+            </a>
+
+            <div class="page-header animate-up">
+                <h1 class="name" style="font-size: 3.5rem;">Professional Journey</h1>
+                <p class="tagline" style="margin: 1rem auto;">Detailed history, achievements and initiatives</p>
+            </div>
+
+            <div class="experience-section animate-up delay-1">
+                <h2 class="section-title">Work Experience</h2>
+
+                <div class="experience-card">
+                    <div class="job-company">Suzlon Energy Ltd</div>
+                    <div class="job-title">AGM / Lead Data Scientist (Operating at GM Scope)</div>
+                    <div style="color: rgba(255,255,255,0.5); margin-bottom: 1rem; font-size: 0.9em;">Mar 2025 – Present</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.95rem; line-height: 1.6;">
+                        <span class="highlight-text">Enterprise AI & Data Leadership:</span> Partner with GM leadership to co-own enterprise AI, data science, and data engineering strategy across a ₹9 Cr (€0.87M) portfolio; drive execution across a 40-member federated team (6 direct, 37 matrixed) delivering enterprise-wide transformation.
+                    </p>
+                    <ul class="job-details">
+                        <li><span class="highlight-text">End-to-End Data & AI Ownership:</span> Lead full-stack delivery spanning data engineering, advanced analytics, and AI—ensuring alignment from data foundation to business impact across operations, reliability, and revenue functions.</li>
+                        <li><span class="highlight-text">Operational Intelligence & Reliability Engineering:</span> Architected a SCADA-driven predictive maintenance platform, reducing unplanned downtime by 8% and delivering ₹1.2 Cr (€135K) in annualized savings.</li>
+                        <li><span class="highlight-text">Asset Performance & Revenue Acceleration:</span> Improved fleet availability from 96.2% to 97.6%, unlocking ~18 MWh incremental generation per 50 MW cluster and directly enhancing revenue realization.</li>
+                        <li><span class="highlight-text">GenAI & Field Enablement:</span> Deployed a multilingual GenAI RAG assistant, reducing MTTR by 28% and improving first-time-fix rates across field operations.</li>
+                        <li><span class="highlight-text">Executive Decision Intelligence:</span> Delivered a voice-enabled Text-to-SQL interface for leadership, compressing decision latency from ~1 hour to under 3 minutes.</li>
+                        <li><span class="highlight-text">Computer Vision & Autonomous Inspection:</span> Led drone-enabled inspection programs with 93% model precision, reducing manual QA effort by 55%.</li>
+                        <li><span class="highlight-text">AI Platformization & MLOps:</span> Established enterprise MLOps (Docker, Kubernetes, Prometheus), reducing deployment cycles from 12 to 3 weeks and enabling scalable AI delivery.</li>
+                        <li><span class="highlight-text">Geospatial Intelligence & Strategic Planning:</span> Built a global Map Analytics platform to optimize wind project siting using multi-layer geospatial constraints.</li>
+                    </ul>
+                    <p style="color: var(--text-secondary); margin-top: 1.5rem; margin-bottom: 0; font-size: 0.95rem; line-height: 1.6;">
+                        <span class="highlight-text">Industry Representation:</span> Act as a key delegate in global AI forums, contributing to external positioning and benchmarking of enterprise AI maturity.
+                    </p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="job-company">Tata Consultancy Services</div>
+                    <div class="job-title">Process Associate / Data Scientist</div>
+                    <div style="color: rgba(255,255,255,0.5); margin-bottom: 1rem; font-size: 0.9em;">Jun 2015 – Aug
+                        2024</div>
+                    <ul class="job-details">
+                        <li><span class="highlight-text">Telstra:</span> early automation and data process management.
+                        </li>
+                        <li><span class="highlight-text">Morgan Stanley:</span> Snowflake onboarding, moving from a
+                            bi-temporal data warehouse (10 months), RPA
+                            team lead (~30 members), Python automation and deployed deep learning architectures (CNNs,
+                            RNNs). Experienced in fintech ecosystems (State Street Aladdin, BlackRock).</li>
+                        <li><span class="highlight-text">Rockefeller Foundation:</span> Led development of Gen-AI RAG
+                            assistant; Architected scalable MLOps ecosystems with Docker, Kubernetes, and CI/CD.
+                            Orchestrated cross-functional collaboration to transition prototypes into cloud-native
+                            microservices. Advocated data-centric AI strategies ensuring transparency and auditability.
+                        </li>
+                        <li><span class="highlight-text">Professional development:</span> Worked across multi-cultural
+                            teams; active in Toastmasters and TCS Maitree programs.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="job-company">Hutchison Whampoa / 3 Global Services</div>
+                    <div class="job-title">Senior Associate</div>
+                    <div style="color: rgba(255,255,255,0.5); margin-bottom: 1rem; font-size: 0.9em;">Jun 2007 – Jan
+                        2011</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.95rem;">Supported
+                        Hutchison’s “3” brand pioneering global 3G networks (HSDPA rollouts, early video calls,
+                        broadband dongles). Played a cross-functional role during the Hutch → Vodafone transition,
+                        coordinating with:</p>
+                    <ul class="job-details">
+                        <li>NOC / OSS teams for provisioning faults</li>
+                        <li>Customer Service Operations for escalations</li>
+                        <li>Group Tech / 3 Global Technical Centres (UK / HK) for firmware and app updates</li>
+                        <li>Delivered KPIs around activation rates and customer satisfaction. Bridged network
+                            engineering, handset provisioning and VAS systems enabling 3G services and content delivery.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="job-company">Wipro Ltd</div>
+                    <div class="job-title">Associate Consultant</div>
+                    <div style="color: rgba(255,255,255,0.5); margin-bottom: 1rem; font-size: 0.9em;">Dec 2004 – Jul
+                        2006</div>
+                    <ul class="job-details">
+                        <li>Worked as technical support for Dell USA clientele on Dell products. Responsibilities
+                            included client calibration on quality, training new joiners, and conducting team
+                            refreshers.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <div class="info-card">
+                    <h3>Academic Foundation</h3>
+                    <ul>
+                        <li><span class="highlight-text">Doctorate in Business Administration (DBA):</span> Dissertation expected in Sept 2027</li>
+                        <li><span class="highlight-text">Executive Program:</span> MIT Professional Education - Artificial Intelligence and Data Science (Dec 2022)</li>
+                        <li><span class="highlight-text">Master's Degree:</span> MIT, Pune</li>
+                        <li><span class="highlight-text">Bachelor of Engineering:</span> Pune University / MIT (2005)</li>
+                        <li><span class="highlight-text">Certifications:</span>
+                            <ul style="margin-top: 0.5rem; list-style-type: circle; padding-left: 1.5rem;">
+                                <li>Machine Learning — Exploratory, Predictive & Prescriptive (L'avenir Institute)</li>
+                                <li>Blackbelt in Data Science (Analytics Vidhya)</li>
+                                <li>Mathematics for AI (Bhaskaracharya Pratishthan)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>Social Initiatives</h3>
+                    <p>Participated in Dr. Klaus Beier's (Universitätsmedizin Charité – Berlin) initiative through
+                        Indo-German relationship, dedicated to preventing child sexual abuse through evidence-based
+                        psychological interventions. Attended national conference "Online interests, offline
+                        consequences: Navigating Complex Sexualities in Digital Context," focusing on digital-era
+                        psychosexual awareness and public health outreach.</p>
+                    <p style="margin-top: 0.5rem;">Worked closely with Dr. Vasudeo Paralikar, Ph.D. (Psychiatry,
+                        Universität Basel, Schweiz) and Dr. Ujwal Nene, Ph.D. (Sexology)</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Passions & Languages</h3>
+                    <ul>
+                        <li><span class="highlight-text">Drama:</span> Admirer of Bertolt Brecht theatre and Dr. Mohan
+                            Agashe</li>
+                        <li><span class="highlight-text">Linguistics:</span> Studing Panini's Ashtadhyayi and
+                            Mahabhashya</li>
+                        <li><span class="highlight-text">Philosophy:</span> Member of Socrates Club, Pune; speaker on
+                            Metaphysics - Ontology and Epistemology</li>
+                        <li><span class="highlight-text">Languages:</span>
+                            <ul style="margin-top: 0.5rem; list-style-type: circle; padding-left: 1.5rem;">
+                                <li>Marathi (Native)</li>
+                                <li>English (Native)</li>
+                                <li>German (A2 Level - Goethe-Institut, Max Müller Bhavan)</li>
+                                <li>Indian languages (Conversational)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="publications-section animate-up delay-2">
+                <h2 class="section-title">Research & Publications</h2>
+
+                <!-- Paper 1 -->
+                <div class="pub-card">
+                    <div class="pub-meta">
+                        <span class="pub-tag">Research Paper (HCI + AI)</span>
+                        <span class="pub-tag">Status: <span style="color: #fbbf24;">Under Review</span></span>
+                        <span class="pub-tag">IF: <span class="pub-impact">~6.0</span></span>
+                    </div>
+                    <span class="pub-journal">International Journal of Human-Computer Studies</span>
+                    <h3 class="pub-title">Personal Logs as First-Class Longitudinal Data Objects for Human-Centred AI
+                    </h3>
+                    <ul class="pub-contributions">
+                        <li>Introduces a layered interaction design framework treating personal logs as persistent,
+                            structured data objects</li>
+                        <li>Implements blockchain-anchored Merkle tree integrity, ensuring tamper-evident longitudinal
+                            data tracking</li>
+                        <li>Proposes “latent value signals” — a novel construct for extracting ethical and
+                            decision-making patterns from narratives</li>
+                        <li>Demonstrates real-world validation (n=20, 4 weeks) with a functional prototype system</li>
+                        <li>Showcases applications in geospatial forecasting, financial planning, and structured
+                            wellbeing reflection</li>
+                        <li>Aligns system architecture with GDPR, HIPAA, and DPDPA compliance frameworks</li>
+                    </ul>
+                    <a href="https://doi.org/10.2139/ssrn.6579749" target="_blank" class="pub-doi-link">
+                        📄 DOI: 10.2139/ssrn.6579749
+                    </a>
+                </div>
+
+                <!-- Paper 2 -->
+                <div class="pub-card">
+                    <div class="pub-meta">
+                        <span class="pub-tag">Engineering Research (AI + Graphs)</span>
+                        <span class="pub-tag">Status: <span style="color: #34d399;">Awaiting Publication</span></span>
+                        <span class="pub-tag">IF: <span class="pub-impact">~8.0–9.0</span></span>
+                    </div>
+                    <span class="pub-journal">Engineering Applications of Artificial Intelligence</span>
+                    <h3 class="pub-title">An Engineering Architecture for Multi-Agent Graph-Based Corporate Intelligence
+                        and Decision Support Across Regulatory Jurisdictions</h3>
+                    <ul class="pub-contributions">
+                        <li>Designs Business Insider, a multi-agent, graph-based corporate intelligence system</li>
+                        <li>Integrates multi-jurisdictional regulatory data (India MCA, US SEC EDGAR, EU BRIS) into a
+                            unified pipeline</li>
+                        <li>Develops Graph-Based Ownership Inference Engine (GOIE) for recursive control propagation
+                        </li>
+                        <li>Introduces Weak Founder Detection (WFD) for governance risk quantification</li>
+                        <li>Achieves 93.8% ownership inference accuracy and 97% reduction in analyst effort</li>
+                        <li>Implements modular, deployment-ready architecture with local LLMs for data sovereignty</li>
+                    </ul>
+                    <span class="pub-doi-link" style="color: var(--text-secondary);">📄 DOI: To be assigned</span>
+                </div>
+
+                <!-- Paper 3 -->
+                <div class="pub-card">
+                    <div class="pub-meta">
+                        <span class="pub-tag">Applied Research (Energy + AI)</span>
+                        <span class="pub-tag">Status: <span style="color: #fbbf24;">Submitted</span></span>
+                        <span class="pub-tag">IF: <span class="pub-impact">~8.0–9.0</span></span>
+                    </div>
+                    <span class="pub-journal">Engineering Applications of Artificial Intelligence</span>
+                    <h3 class="pub-title">Knowledge Graph-Driven Operational Intelligence in Wind Energy OMS: Agentic AI
+                        Opportunity Assessment and Validation in Multi-SPV Portfolios</h3>
+                    <ul class="pub-contributions">
+                        <li>Conducts explanatory case study in a large Indian wind energy OEM OMS division</li>
+                        <li>Builds Neo4j-based knowledge graph integrating SCADA, SAP ERP, HRMS, and contract data</li>
+                        <li>Applies RISAC role mapping + SIPOC process modelling for operational landscape discovery
+                        </li>
+                        <li>Identifies and validates Agentic AI opportunity areas within complex OMS environments</li>
+                        <li>Delivers PoCs for spare parts demand prediction and performance-based maintenance
+                            optimization</li>
+                        <li>Demonstrates improved machine availability and revenue retention at SPV level</li>
+                        <li>Proposes operational legibility as a prerequisite for scalable Agentic AI deployment</li>
+                    </ul>
+                    <span class="pub-doi-link" style="color: var(--text-secondary);">📄 DOI: Pending</span>
+                </div>
+            </div>
+
+            <!-- Letters of Recommendation Section -->
+            <div class="docs-section animate-up delay-4">
+                <h2 class="section-title" style="font-size: 2rem;">Letters of Recommendation</h2>
+                <div class="docs-grid">
+                    <a href="documents/MIT_LOR.pdf?v=1" class="doc-card" target="_blank">
+                        <div class="doc-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                            </svg>
+                        </div>
+                        <div class="doc-info">
+                            <span class="doc-name">Pro-Chancellor, MIT - M.T. Karad</span>
+                            <span class="doc-meta">Recommendation Letter</span>
+                        </div>
+                    </a>
+                    <a href="documents/Suzlon_LOR.pdf?v=1" class="doc-card" target="_blank">
+                        <div class="doc-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                            </svg>
+                        </div>
+                        <div class="doc-info">
+                            <span class="doc-name">Suzlon Group CIO - Sunil Nair</span>
+                            <span class="doc-meta">Recommendation Letter</span>
+                        </div>
+                    </a>
+                    <a href="documents/Social_V_P_Paralikar.pdf?v=1" class="doc-card" target="_blank">
+                        <div class="doc-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                            </svg>
+                        </div>
+                        <div class="doc-info">
+                            <span class="doc-name">Social - V.P. Paralikar</span>
+                            <span class="doc-meta">Recommendation Letter</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="roots-section animate-up delay-2">
+                <h2 class="section-title">Foundation & Roots</h2>
+                <div class="roots-grid">
+                    <div class="experience-card">
+                        <div class="job-title">Early Life & Education</div>
+                        <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.6;">
+                            Born in <span class="highlight-text">Phaltan</span>, Amit's academic journey began at
+                            <span class="highlight-text">St Patrick's School</span>, Pune, where he spent a formative
+                            decade.
+                            Beyond academics, he was a dedicated <span class="highlight-text">hockey player</span>,
+                            instilling a spirit of teamwork and discipline early on.
+                        </p>
+                    </div>
+                    <div class="experience-card">
+                        <div class="job-title">Family Legacy</div>
+                        <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.6;">
+                            Amit comes from a lineage of excellence. His father, <span class="highlight-text">Vishnu
+                                Bhise</span>,
+                            Heads Development & Planning at MAEER (Maharashtra Academy of Engineering and Educational
+                            Research) and was felicitated by the Vice-President of India for
+                            architecting the <span class="highlight-text">Peace Dome</span>—the world's largest prollate
+                            ellipsoid long axis vertical dome of
+                            its time.
+                            His mother is an <span class="highlight-text">Indian Classical Musician</span>.
+                        </p>
+                    </div>
+                </div>
+                <div class="experience-card" style="margin-top: 2rem;">
+                    <div class="job-title">Present Day</div>
+                    <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.6;">
+                        Currently residing in <span class="highlight-text">Bavdhan Khurd, Pune</span>, Amit lives with
+                        his
+                        wife <span class="highlight-text">Gauri</span> (an Interior Designer), their two daughters,
+                        parents, and his sister (a Yoga Teacher). This strong family foundation fuels his
+                        professional drive and commitment to social impact.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <a href="chat.html" class="chat-widget-btn" title="Ask Amit AI Assistant">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            <line x1="9" y1="10" x2="15" y2="10"></line>
+            <line x1="12" y1="7" x2="12" y2="13"></line>
+        </svg>
+    </a>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <span>© 2025 Amit Bhise</span>
+            <span class="dot">·</span>
+            <span class="highlight">Relocation Ready</span>
+            <span class="dot">·</span>
+            <span>All Rights Reserved</span>
+        </div>
+    </footer>
+</body>
+
+</html>

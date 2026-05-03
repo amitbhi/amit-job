@@ -1,0 +1,370 @@
+/* 
+    Amit Bhise - Handcrafted Digital Twin Style
+    Restored Original Glass Card Design
+*/
+
+:root {
+    --bg-dark: #0a0f1c;
+    --bg-darker: #05080f;
+    --accent: #2dd4bf;
+    --accent-hover: #14b8a6;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border-glass: rgba(255, 255, 255, 0.08);
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --glass-blur: blur(12px);
+}
+
+.section-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    color: var(--accent);
+    margin: 4rem 0 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--accent);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.blob-cont {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: var(--bg-darker);
+}
+
+.blob {
+    position: absolute;
+    filter: blur(80px);
+    opacity: 0.15;
+    border-radius: 50%;
+    animation: move 20s infinite alternate;
+}
+
+.blob1 { width: 500px; height: 500px; background: var(--accent); top: -100px; right: -100px; }
+.blob2 { width: 400px; height: 400px; background: #4f46e5; bottom: -100px; left: -100px; }
+
+@keyframes move {
+    from { transform: translate(0, 0); }
+    to { transform: translate(100px, 100px); }
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10, 15, 28, 0.92);
+    backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid var(--border-glass);
+    z-index: 100;
+    height: 70px;
+}
+
+.nav-brand img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 10px;
+    left: 5%;
+}
+
+.nav-brand img:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--accent);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 5% 50px;
+}
+
+.glass-card {
+    background: var(--card-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--border-glass);
+    border-radius: 24px;
+    padding: 3rem;
+}
+
+/* Restored Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.profile-frame {
+    flex-shrink: 0;
+    width: 250px;
+    height: 250px;
+    padding: 6px;
+    background: linear-gradient(135deg, var(--accent), #4f46e5);
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(45, 212, 191, 0.2);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--bg-dark);
+}
+
+@media (max-width: 900px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.name {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.role {
+    font-size: 1.5rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.divider {
+    color: rgba(255, 255, 255, 0.2);
+    margin: 0 0.5rem;
+}
+
+.contact-info {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.contact-link svg { width: 18px; color: var(--accent); }
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border-glass);
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary { background: var(--accent); color: var(--bg-darker); }
+.btn-secondary { background: rgba(255,255,255,0.05); color: white; border: 1px solid var(--border-glass); }
+
+.btn:hover { transform: translateY(-2px); }
+
+/* Restored Grid & Research Section */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-glass);
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: var(--glass-blur);
+}
+
+.card-icon { font-size: 2rem; margin-bottom: 1rem; display: block; }
+
+.pub-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-glass);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--accent);
+}
+
+.pub-meta { display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.85rem; }
+.pub-tag { background: rgba(45, 212, 191, 0.1); color: var(--accent); padding: 0.2rem 0.6rem; border-radius: 4px; }
+.pub-impact { color: #ffd700; font-weight: 600; }
+.pub-title { font-family: 'Outfit', sans-serif; font-size: 1.5rem; margin-bottom: 1rem; }
+.pub-contributions { padding-left: 1.5rem; color: var(--text-secondary); }
+
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.stat-value { font-size: 2.5rem; font-weight: 800; color: var(--accent); display: block; }
+.stat-label { color: var(--text-secondary); font-size: 0.9rem; text-transform: uppercase; }
+
+.docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.doc-card {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    text-decoration: none;
+    color: white;
+    border: 1px solid var(--border-glass);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    backdrop-filter: var(--glass-blur);
+}
+
+.doc-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-8px);
+    border-color: var(--accent);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(45, 212, 191, 0.1);
+}
+
+.doc-icon {
+    font-size: 3rem;
+    width: 70px;
+    height: 70px;
+    background: rgba(45, 212, 191, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent);
+}
+
+.doc-name {
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 1.1rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.doc-meta {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer { padding: 3rem; text-align: center; border-top: 1px solid var(--border-glass); }
+
+.animate-up { animation: fadeInUp 0.8s ease forwards; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 768px) {
+    .name { font-size: 2.5rem; }
+    .action-buttons { flex-direction: column; }
+}
