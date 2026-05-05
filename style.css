@@ -1,17 +1,17 @@
 /* 
     Amit Bhise - Handcrafted Digital Twin Style
-    Restored Original Glass Card Design
+    Restored Original Glass Card Design - LIGHT THEME
 */
 
 :root {
-    --bg-dark: #0a0f1c;
-    --bg-darker: #05080f;
-    --accent: #2dd4bf;
-    --accent-hover: #14b8a6;
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --border-glass: rgba(255, 255, 255, 0.08);
-    --card-bg: rgba(255, 255, 255, 0.03);
+    --bg-dark: #f8fafc;
+    --bg-darker: #ffffff;
+    --accent: #0f766e;
+    --accent-hover: #115e59;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --border-glass: rgba(0, 0, 0, 0.08);
+    --card-bg: rgba(255, 255, 255, 0.6);
     --glass-blur: blur(12px);
 }
 
@@ -84,7 +84,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(10, 15, 28, 0.92);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: var(--glass-blur);
     border-bottom: 1px solid var(--border-glass);
     z-index: 100;
@@ -192,7 +192,7 @@ body {
 }
 
 .divider {
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(0, 0, 0, 0.1);
     margin: 0 0.5rem;
 }
 
@@ -223,17 +223,17 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(255,255,255,0.05);
+    background: rgba(0,0,0,0.05);
     border: 1px solid var(--border-glass);
     padding: 0.6rem 1.2rem;
     border-radius: 50px;
-    color: white;
+    color: var(--text-primary);
     text-decoration: none;
     transition: 0.3s;
 }
 
 .social-btn:hover {
-    background: rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.1);
     border-color: var(--accent);
     transform: translateY(-2px);
 }
@@ -253,7 +253,7 @@ body {
 }
 
 .btn-primary { background: var(--accent); color: var(--bg-darker); }
-.btn-secondary { background: rgba(255,255,255,0.05); color: white; border: 1px solid var(--border-glass); }
+.btn-secondary { background: rgba(0,0,0,0.05); color: var(--text-primary); border: 1px solid var(--border-glass); }
 
 .btn:hover { transform: translateY(-2px); }
 
@@ -276,7 +276,7 @@ body {
 .card-icon { font-size: 2rem; margin-bottom: 1rem; display: block; }
 
 .pub-card {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.5);
     border: 1px solid var(--border-glass);
     border-radius: 16px;
     padding: 2rem;
@@ -286,7 +286,7 @@ body {
 
 .pub-meta { display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.85rem; }
 .pub-tag { background: rgba(45, 212, 191, 0.1); color: var(--accent); padding: 0.2rem 0.6rem; border-radius: 4px; }
-.pub-impact { color: #ffd700; font-weight: 600; }
+.pub-impact { color: #fbbf24; font-weight: 600; }
 .pub-title { font-family: 'Outfit', sans-serif; font-size: 1.5rem; margin-bottom: 1rem; }
 .pub-contributions { padding-left: 1.5rem; color: var(--text-secondary); }
 
@@ -310,7 +310,7 @@ body {
 }
 
 .doc-card {
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.5);
     padding: 2.5rem 2rem;
     border-radius: 20px;
     display: flex;
@@ -319,17 +319,17 @@ body {
     text-align: center;
     gap: 1.5rem;
     text-decoration: none;
-    color: white;
+    color: var(--text-primary);
     border: 1px solid var(--border-glass);
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     backdrop-filter: var(--glass-blur);
 }
 
 .doc-card:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.8);
     transform: translateY(-8px);
     border-color: var(--accent);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(45, 212, 191, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 0 20px rgba(45, 212, 191, 0.05);
 }
 
 .doc-icon {
