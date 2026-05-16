@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=7">
     <script src="analytics.js"></script>
     <style>
         /* Additional specific styles for about page */
@@ -29,6 +29,20 @@
             display: inline-block;
             border-bottom: 2px solid rgba(45, 212, 191, 0.3);
             padding-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .job-title {
+                font-size: 1.25rem;
+            }
+
+            .experience-card {
+                padding: 1.5rem;
+            }
         }
 
         .experience-card {
@@ -88,7 +102,7 @@
 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -173,7 +187,12 @@
         <div class="nav-brand">
             <img src="profile.jpg" alt="Amit Bhise">
         </div>
-        <div class="nav-links">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
             <a href="index.html" class="nav-link">Home</a>
             <a href="about.html" class="nav-link active">About</a>
             <a href="chat.html" class="nav-link">Ask Amit AI</a>
@@ -192,8 +211,8 @@
             </a>
 
             <div class="page-header animate-up">
-                <h1 class="name" style="font-size: 3.5rem;">Professional Journey</h1>
-                <p class="tagline" style="margin: 1rem auto;">Detailed history, achievements and initiatives</p>
+                <h1 class="name">Professional Journey</h1>
+                <p class="tagline">Detailed history, achievements and initiatives</p>
             </div>
 
             <div class="experience-section animate-up delay-1">
@@ -202,23 +221,62 @@
                 <div class="experience-card">
                     <div class="job-company">Suzlon Energy Ltd</div>
                     <div class="job-title">AGM / Lead Data Scientist (Operating at GM Scope)</div>
-                    <div style="color: rgba(255,255,255,0.5); margin-bottom: 1rem; font-size: 0.9em;">Mar 2025 – Present</div>
+                    <div style="color: rgba(255,255,255,0.5); margin-bottom: 1rem; font-size: 0.9em;">Mar 2025 – Present
+                    </div>
                     <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.95rem; line-height: 1.6;">
-                        <span class="highlight-text">Enterprise AI & Data Leadership:</span> Partner with GM leadership to co-own enterprise AI, data science, and data engineering strategy across a ₹9 Cr (€0.87M) portfolio; drive execution across a 40-member federated team (6 direct, 37 matrixed) delivering enterprise-wide transformation.
+                        <span class="highlight-text">Enterprise AI & Data Leadership:</span> Partner with GM leadership
+                        to co-own enterprise AI, data science, and data engineering strategy across a ₹9 Cr (€0.87M)
+                        portfolio; drive execution across a 40-member federated team (6 direct, 37 matrixed) delivering
+                        enterprise-wide transformation.
                     </p>
+                    <p
+                        style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.6;">
+                        <span class="highlight-text">End-to-End Data & AI Ownership:</span> Lead full-stack delivery
+                        spanning data engineering, advanced analytics, and AI—ensuring alignment from data foundation to
+                        business impact across operations, reliability, and revenue functions.
+                    </p>
+                    <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 1rem; font-size: 0.95rem;">
+                        Some of the projects led:</p>
                     <ul class="job-details">
-                        <li><span class="highlight-text">End-to-End Data & AI Ownership:</span> Lead full-stack delivery spanning data engineering, advanced analytics, and AI—ensuring alignment from data foundation to business impact across operations, reliability, and revenue functions.</li>
-                        <li><span class="highlight-text">Operational Intelligence & Reliability Engineering:</span> Architected a SCADA-driven predictive maintenance platform, reducing unplanned downtime by 8% and delivering ₹1.2 Cr (€135K) in annualized savings.</li>
-                        <li><span class="highlight-text">Asset Performance & Revenue Acceleration:</span> Improved fleet availability from 96.2% to 97.6%, unlocking ~18 MWh incremental generation per 50 MW cluster and directly enhancing revenue realization.</li>
-                        <li><span class="highlight-text">GenAI & Field Enablement:</span> Deployed a multilingual GenAI RAG assistant, reducing MTTR by 28% and improving first-time-fix rates across field operations.</li>
-                        <li><span class="highlight-text">Executive Decision Intelligence:</span> Delivered a voice-enabled Text-to-SQL interface for leadership, compressing decision latency from ~1 hour to under 3 minutes.</li>
-                        <li><span class="highlight-text">Computer Vision & Autonomous Inspection:</span> Led drone-enabled inspection programs with 93% model precision, reducing manual QA effort by 55%.</li>
-                        <li><span class="highlight-text">AI Platformization & MLOps:</span> Established enterprise MLOps (Docker, Kubernetes, Prometheus), reducing deployment cycles from 12 to 3 weeks and enabling scalable AI delivery.</li>
-                        <li><span class="highlight-text">Geospatial Intelligence & Strategic Planning:</span> Built a global Map Analytics platform to optimize wind project siting using multi-layer geospatial constraints.</li>
-                        <li><span class="highlight-text">Enterprise Systems Integration:</span> Brief exposure to SAP HANA and Salesforce implementation.</li>
+                        <li><span class="highlight-text">Operational Intelligence & Reliability Engineering:</span>
+                            Architected a SCADA-driven predictive maintenance platform, reducing unplanned downtime by
+                            8% and delivering ₹1.2 Cr (€135K) in annualized savings.</li>
+                        <li><span class="highlight-text">Asset Performance & Revenue Acceleration:</span> Improved fleet
+                            availability from 96.2% to 97.6%, unlocking ~18 MWh incremental generation per 50 MW cluster
+                            and directly enhancing revenue realization.</li>
+                        <li><span class="highlight-text">GenAI & Field Enablement:</span> Deployed a multilingual GenAI
+                            RAG assistant, reducing MTTR by 28% and improving first-time-fix rates across field
+                            operations.</li>
+                        <li><span class="highlight-text">Executive Decision Intelligence:</span> Delivered a
+                            voice-enabled Text-to-SQL interface for leadership, compressing decision latency from ~1
+                            hour to under 3 minutes.</li>
+                        <li><span class="highlight-text">Computer Vision & Autonomous Inspection:</span> Led
+                            drone-enabled inspection programs with 93% model precision, reducing manual QA effort by
+                            55%.</li>
+                        <li><span class="highlight-text">AI Platformization & MLOps:</span> Established enterprise MLOps
+                            (Docker, Kubernetes, Prometheus), reducing deployment cycles from 12 to 3 weeks and enabling
+                            scalable AI delivery.</li>
+                        <li><span class="highlight-text">Geospatial Intelligence & Strategic Planning:</span> Built a
+                            global Map Analytics platform to optimize wind project siting using multi-layer geospatial
+                            constraints.</li>
                     </ul>
-                    <p style="color: var(--text-secondary); margin-top: 1.5rem; margin-bottom: 0; font-size: 0.95rem; line-height: 1.6;">
-                        <span class="highlight-text">Industry Representation:</span> Act as a key delegate in global AI forums, contributing to external positioning and benchmarking of enterprise AI maturity.
+                    <p
+                        style="color: var(--text-secondary); margin-top: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem; line-height: 1.6;">
+                        <span class="highlight-text">AI Governance & Security:</span> Led adoption and alignment of
+                        enterprise AI governance and security practices leveraging NIST AI RMF, ISO 42001, MITRE ATLAS,
+                        OWASP, and DLP frameworks. Enabled secure and compliant AI deployment through structured risk
+                        management, adversarial AI threat modeling, secure application architecture, governance
+                        controls, and enterprise data protection strategies for AI-driven platforms and LLM-based
+                        systems.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.95rem; line-height: 1.6;">
+                        <span class="highlight-text">Enterprise Systems Integration:</span> Full Snowflake integration
+                        and project migrations. Brief exposure to SAP HANA and Salesforce implementation.
+                    </p>
+                    <p
+                        style="color: var(--text-secondary); margin-top: 1.5rem; margin-bottom: 0; font-size: 0.95rem; line-height: 1.6;">
+                        <span class="highlight-text">Industry Representation:</span> Act as a key delegate in global AI
+                        forums, contributing to external positioning and benchmarking of enterprise AI maturity.
                     </p>
                 </div>
 
@@ -281,14 +339,13 @@
                     <h3>Academic Foundation</h3>
                     <ul>
                         <li><span class="highlight-text">Doctorate in Business Administration (DBA):</span> Dissertation expected in Sept 2027</li>
-                        <li><span class="highlight-text">Executive Program:</span> MIT Professional Education - Artificial Intelligence and Data Science (Dec 2022)</li>
                         <li><span class="highlight-text">Master's Degree:</span> MIT, Pune</li>
-                        <li><span class="highlight-text">Bachelor of Engineering:</span> Pune University / MIT (2005)</li>
+                        <li><span class="highlight-text">D.Mech Engineering:</span> Sou. Venutai Chavana / Sinhagad institutes</li>
                         <li><span class="highlight-text">Certifications:</span>
                             <ul style="margin-top: 0.5rem; list-style-type: circle; padding-left: 1.5rem;">
-                                <li>Machine Learning — Exploratory, Predictive & Prescriptive (L'avenir Institute)</li>
-                                <li>Blackbelt in Data Science (Analytics Vidhya)</li>
-                                <li>Mathematics for AI (Bhaskaracharya Pratishthan)</li>
+                                <li>Machine Learning — Exploratory, Predictive & Prescriptive (<strong>L'avenir Institute</strong>)</li>
+                                <li>Blackbelt in Data Science (<strong>Analytics Vidhya</strong>)</li>
+                                <li>Mathematics for Artificial Intelligence — <strong>Bhaskaracharya Pratishthan</strong> (Linear Algebra, Multivariate Calculus, Probability, Discrete Math)</li>
                             </ul>
                         </li>
                     </ul>
@@ -508,6 +565,7 @@
             <span>All Rights Reserved</span>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
