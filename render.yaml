@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: amit-job-backend
+    name: amit-leader-backend
     env: python
     plan: free
     buildCommand: pip install --upgrade pip && pip install -r requirements.txt
