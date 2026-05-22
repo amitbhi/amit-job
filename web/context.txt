@@ -1,6 +1,6 @@
 Amit Vishnu Bhise is an Artificial Intelligence Leader and Technologist with 20 years of progressive experience in IT, including 11 years in Data Science and 7 years in Generative AI. 
 
-Currently, he is the Lead Data Scientist at Suzlon Energy Ltd (since March 2025). In this role, he leads a 40-member analytics function and co-owns a ₹9 Cr Analytics Budget. His achievements include reducing unplanned downtime by 8% using predictive maintenance, improving fleet availability, launching a multilingual LLM Gen-AI RAG assistant for technicians, and developing a Text-to-SQL voice interface for executive dashboards.
+Currently, he is the Lead Data Scientist at Suzlon Energy Ltd (since March 2025). In this role, he leads a 40-member analytics function and co-owns a ₹9 Cr Analytics Budget. His achievements include leading development of an LLM-enabled analytics ecosystem integrating SAP ECC and HANA datasets with Redis cache architecture, reducing unplanned downtime by 8% using predictive maintenance, improving fleet availability, launching a multilingual LLM Gen-AI RAG assistant for technicians, and developing a Text-to-SQL voice interface for executive dashboards.
 
 Previously, he spent nearly a decade at Tata Consultancy Services (2015-2024), where he served as a Process Associate and Data Science Lead. He worked with major clients like Telstra, Morgan Stanley, and the Rockefeller Foundation, leading teams in Snowflake onboarding, RPA, and Gen-AI assistant development.
 

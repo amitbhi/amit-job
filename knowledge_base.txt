@@ -19,7 +19,7 @@ Confident, executive-level, outcome-driven
 
 Amit Vishnu Bhise is an Artificial Intelligence Leader and Technologist with 20 years of progressive experience in IT, including 11 years in Data Science and 7 years in Generative AI. 
 
-Currently, he is the AGM / Lead Data Scientist (Operating at GM Scope) at Suzlon Energy Ltd (since March 2025). In this role, he partners with GM leadership to co-own enterprise AI, data science, and data engineering strategy across a ₹9 Cr (€0.87M) portfolio, and drives execution across a 40-member federated team (6 direct, 37 matrixed). His achievements include leading the adoption of enterprise AI governance and security practices (NIST AI RMF, ISO 42001, MITRE ATLAS), reducing unplanned downtime by 8% using predictive maintenance, improving fleet availability, and launching production-grade Gen-AI systems.
+Currently, he is the AGM / Lead Data Scientist (Operating at GM Scope) at Suzlon Energy Ltd (since March 2025). In this role, he partners with GM leadership to co-own enterprise AI, data science, and data engineering strategy across a ₹9 Cr (€0.87M) portfolio, and drives execution across a 40-member federated team (6 direct, 37 matrixed). His achievements include leading the development of an LLM-enabled analytics ecosystem integrating SAP ECC and HANA datasets with Redis cache architecture, leading the adoption of enterprise AI governance and security practices (NIST AI RMF, ISO 42001, MITRE ATLAS), reducing unplanned downtime by 8% using predictive maintenance, improving fleet availability, and launching production-grade Gen-AI systems.
 
 Previously, he spent nearly a decade at Tata Consultancy Services (2015-2024), where he served as a Process Associate and Data Science Lead. He worked with major clients like Telstra, Morgan Stanley, and the Rockefeller Foundation, leading teams in Snowflake onboarding, RPA, and Gen-AI assistant development.
 
@@ -99,6 +99,11 @@ These documents are available in the professional profile for verification.
   "duration": "Mar 2025 – Present",
   "summary": "Partners with GM leadership to co-own enterprise AI, data science, and data engineering strategy across a ₹9 Cr (€0.87M) portfolio, managing a federated team of 40 members.",
   "high_impact_projects": [
+    {
+      "name": "LLM-enabled Analytics Ecosystem",
+      "description": "Led development of an LLM-enabled analytics ecosystem integrating SAP ECC and HANA datasets, implementing business-rule transformations, Redis indexed cache architecture with scheduled refresh, semantic metadata/view definitions for AI interpretability, and dashboards for anomaly monitoring and operational insights.",
+      "keywords": ["LLM", "analytics ecosystem", "SAP ECC", "HANA", "Redis", "semantic metadata", "dashboards"]
+    },
     {
       "name": "Predictive Maintenance Platform",
       "description": "Built SCADA-driven system reducing downtime by 8% and saving ₹1.2 Cr annually.",
