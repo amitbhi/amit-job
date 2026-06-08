@@ -531,6 +531,12 @@ body {
     .pub-title {
         font-size: 1.25rem;
     }
+
+    .navbar img {
+        opacity: 0.15;
+        pointer-events: none;
+        z-index: -1;
+    }
 }
 
 /* Neural Agent Specific Styles */
